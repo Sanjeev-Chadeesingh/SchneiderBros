@@ -44,7 +44,7 @@ body {
     display: block;
     font-size: 64px;
     letter-spacing: 10px;
-    animation: moveInLeft 3s ease-out;
+    animation: moveInRightSome 3s ease-out;
 }
 
 .sub-header {
