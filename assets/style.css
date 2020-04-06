@@ -25,11 +25,11 @@ body {
 .logo-box {
     position: absolute;
     top: 40px;
-    left: 40px; 
+    right: 40px; 
 }
 
 .logo {
-    animation: moveInRight 3s ease-out;
+    animation: moveInLogo 3s ease-out;
     height: 235px;
 }
 
@@ -100,15 +100,18 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
 
-@keyframes moveInBottom {
+@keyframes moveInLogo {
+
     0% {
         opacity: 0;
-        transform: translateY(1000px);
+        transform: translateX(-1500px);
     }
 
     100% {
         opacity: 1;
         transform: translate(0);
     }
+
 }
