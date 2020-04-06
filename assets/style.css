@@ -93,7 +93,7 @@ body {
     }
 
     80% {
-        transform: translateX(-200px);
+        transform: translateX(-100px);
     }
 
     100% {
@@ -107,6 +107,10 @@ body {
     0% {
         opacity: 0;
         transform: translateX(-1500px);
+    }
+
+    80% {
+        transform: translateX(35px);
     }
 
     100% {
