@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-    animation: moveInRight 2s ease-out;
+    animation: moveInRight 3s ease-out;
     height: 235px;
 }
 
@@ -44,14 +44,14 @@ body {
     display: block;
     font-size: 64px;
     letter-spacing: 10px;
-    animation: moveInLeft 2s ease-out;
+    animation: moveInLeft 3s ease-out;
 }
 
 .sub-header {
     display: block;
     font-size: 40px;
     letter-spacing: 6px;
-    animation: moveInRightSome 2s ease-out;
+    animation: moveInRightSome 3s ease-out;
 }
 
 @keyframes moveInLeft {
