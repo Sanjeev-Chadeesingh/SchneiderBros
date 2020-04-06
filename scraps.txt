@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Natours | Exciting tours for adventurous people</title>
+    </head>
+    <body>
+        <!-- 1 create header element with class of header -->
+        <header class="header">
+            <!-- 7 div with class of logo, with logo image -->
+            <div class="logo-box">
+                <img src="img/logo-white.png" alt="Logo" class="logo">
+            </div>
+            <!-- 12 put the h1 in a div classed text-box -->
+            <div class="text-box">
+                 <!-- 10 add h1 class with span classes within for main and sub headers -->
+                <h1 class="heading-primary">
+                    <span class="heading-primary-main">Outdoors</span>
+                    <span class="heading-primary-sub">is where life happens</span>
+                </h1>
+                <!-- 17 add complex animation button here -->
+                <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
+            </div>
+
+        </header>
+    </body>
+</html>
+
+
+
+
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+/* 2 make basic reset with asterisk, margin+padding+boxSizingEQUALSborderBox set to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3 set font format within body */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    /* 5 add padding of 30px */
+    padding: 30px;
+}
+
+/* 4 style header class, set vh and import path to image, background sizing, and finally the linear-gradient, which you put before the background image, so it is atop the image. First put direction+Yaxis, then put colors it will grade through, with some opacity */
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(126, 213, 111, 0.8), 
+        rgba(40, 180, 133, 0.8)), 
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    /* 8 set this as the parent for the logo-box, in order to allow the reference of absolute positioning to work */
+    position: relative;
+    /* 6 use clip-path to shape the image, check the clippy resource for help */
+    clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
+}
+
+/* 7 style logo-box and logo */
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+/* 9 style the logo */
+.logo {
+    height: 35px;
+    animation: moveInLeft 3s ease-out;
+}
+
+/* 13 style the text-box, top/left @ 50% after absolute positioning, then transformTranslate!! transform: translate(-50%, -50%); is the centerAnything hack! */
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* 11 create styles for heading-primary, -main and -sub */
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    /* 17 to stop the animation shake, use backface-visibility: hidden, put in parent of the items that will animate (WHICH IS RIGHT HERE) */
+    backface-visibility: hidden;
+    margin: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    /* 15 add the animation here, give animation-name, animation-delay(how long before animation), animation-timing-function(speed of different steps of animation), animation-iteration-count(how many times) and animation-duration, can also set animations to pseudoclasses (like hover) */
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    /* 16 animation for moveInRight, can shorthand it with just animation: and then everything you want it to do */
+    /* animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out; */
+    animation: moveInRight 3s ease-out;
+}
+
+/* 14 animationStation!! first, @keyframes and a name, then the situation of the animation at various chronological stages (0%, xx%, 100%), alongside opacity(starting at 0, ending at 1) and transform: translateX/Y(), it ends with a transform: translate(0) */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    80% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+
+    80% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* 18 style the btn with the link pseudoclass */
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    /* 19 animate through transition */
+    transition: all .2s; 
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-white {
+    background-color:#fff;
+    color: #777;
+}
+
+/* 20 pseudo-element, basically, another element atop of the element, exactly like it, but put behind it, and when you hover out of it, it goes back behind the button. the after pseudoelement is a child of the element, so the 100%s are in reference to the button. set the parent(actual button) to relative so that you can set the pseudoElement to absolute. Use the z-index @ -1 to place it directly behind */
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+/* 21 this is an after button state on the pseudoelement, we scale it double size with the transform property. In order to execute the animation, the transition/animation property needs to be on the initial state, on the .btn::after */
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    /* 22 opacity 0 sets something to zero, as it animates in this case */
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 2s ease-out 3s;
+    /* 23 fillMode applies the 0% styles from @keyframe, hack to hide the button */
+    animation-fill-mode: backwards;
+}
