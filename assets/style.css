@@ -20,47 +20,46 @@ font-family: 'Baloo Chettan 2', cursive;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
-    font-size: 18px;
     font-family: 'Signika Negative', sans-serif;
 }
 
 .header {
-    height: 85vh;
-    background-image: linear-gradient(
-        to bottom right,
-        rgba(0, 0, 0, 0.6),
-        rgba(1, 151, 1, 0.6)
-    ), url(../assets/images/IMG_6525.JPG);
+    height: 75vh;
+    background-image:  url(../assets/images/IMG_6525.JPG);
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .logo {
-    height: 190px;
+    height: 18rem;
     position: absolute;
     margin: 1%;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .headings-box {
     position: absolute;
-    top: 73%;
-    left: 40%;
+    top: 70%;
+    left: 40.5%;
     color: rgb(255, 255, 255);
 }
 
 .main-heading {
     display: block;
-    margin-bottom: 1%;
     text-transform: lowercase;
-    font-size: 165%;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
+    font-size: 7rem;
 }
 
 .sub-heading {
     display: block;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    font-size: 3rem;
 }
