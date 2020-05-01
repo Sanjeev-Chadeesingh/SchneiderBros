@@ -1,3 +1,19 @@
+/*
+COLORS:
+#e67e22 - orange
+#44bd32 - green
+
+CLIP-PATHS:
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+
+FONTS:
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Baloo Chettan 2', cursive;
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -5,117 +21,46 @@
 }
 
 body {
-    padding: 10px 30px 30px 30px;
-    font-family: "Do Hyeon", sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: white;
+    font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 .header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(0, 128, 0, 0.75), rgba(255, 166, 0, 0.75)), url(../assets/images/orange-grove-3.jpeg);
+    height: 85vh;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.6),
+        rgba(1, 151, 1, 0.6)
+    ), url(../assets/images/IMG_6525.JPG);
     background-size: cover;
-    background-position: bottom;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+    background-position: center;
     position: relative;
 }
 
-.logo-box {
-    position: absolute;
-    top: 40px;
-    right: 40px; 
-}
-
 .logo {
-    animation: moveInLogo 3s ease-out;
-    height: 235px;
+    height: 190px;
+    position: absolute;
+    margin: 1%;
+    top: 0;
+    right: 0;
 }
 
 .headings-box {
     position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 73%;
+    left: 40%;
+    color: rgb(255, 255, 255);
 }
 
-.main-header {
+.main-heading {
     display: block;
-    font-size: 64px;
-    letter-spacing: 10px;
-    animation: moveInRightSome 3s ease-out;
+    margin-bottom: 1%;
+    text-transform: lowercase;
+    font-size: 165%;
+    letter-spacing: 3px;
 }
 
-.sub-header {
+.sub-heading {
     display: block;
-    font-size: 40px;
-    letter-spacing: 6px;
-    animation: moveInRightSome 3s ease-out;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-1000px);
-    }
-
-    80% {
-        transform: translateX(200px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(2000px);
-    }
-/* 
-    80% {
-        transform: translateX(-200px);
-    } */
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRightSome {
-    0% {
-        opacity: 0;
-        transform: translateX(1000px);
-    }
-
-    80% {
-        transform: translateX(-100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInLogo {
-
-    0% {
-        opacity: 0;
-        transform: translateX(-1500px);
-    }
-
-    80% {
-        transform: translateX(35px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-
+    text-transform: lowercase;
 }
