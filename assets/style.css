@@ -21,7 +21,7 @@ font-family: 'Baloo Chettan 2', cursive;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 
 .header {
     height: 75vh;
-    background-image:  url(../assets/images/IMG_6525.JPG);
+    background-image: url(../assets/images/barn\ cropped\ 01.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -47,7 +47,7 @@ body {
 .headings-box {
     position: absolute;
     top: 70%;
-    left: 40.5%;
+    left: 46.5%;
     color: rgb(255, 255, 255);
 }
 
@@ -55,7 +55,7 @@ body {
     display: block;
     text-transform: lowercase;
     letter-spacing: .3rem;
-    font-size: 7rem;
+    font-size: 6.5rem;
 }
 
 .sub-heading {
