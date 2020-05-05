@@ -10,7 +10,9 @@
         position: absolute;
         top: 4%;
         left: 1%;
-        animation: moveInRight 2s ease;
+        animation: moveInRight 2s ease .5s;
+        animation-fill-mode: backwards;
+        backface-visibility: hidden;
     }
 
     &__logo {
@@ -22,7 +24,9 @@
         top: 65%;
         left: 47.5%;
         color: $color-white;
-        animation: moveInRight 2s ease;
+        animation: moveInRight 2s ease .5s;
+        animation-fill-mode: backwards;
+        backface-visibility: hidden;
     }
 }
 
