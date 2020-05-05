@@ -1,0 +1,27 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        display: inline-block;
+    }
+    &--header {
+        position: absolute;
+        bottom: 8%;
+        right: 4%;
+        font-size: 1.75rem;
+        color: $color-white;
+        border: 3px solid $color-white;
+        border-radius: 10rem;
+        padding: 1.5rem;
+        background-color: transparent;
+        animation: moveInRight 2s ease;
+
+            &:hover {
+            color: $color-white;
+            background-color: $color-primary-green;
+            transform: scale(1.25);
+            transition: all .3s;
+            border: none;
+        }
+    }
+}

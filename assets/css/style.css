@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(1.5rem); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+/*
+FONTS:
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Baloo Chettan 2', cursive;
+*/
+body {
+  font-family: 'Signika Negative', sans-serif;
+  padding: 1.5rem; }
+
+.heading--main {
+  text-transform: lowercase;
+  letter-spacing: .3rem;
+  font-size: 6rem; }
+
+.heading--sub {
+  text-transform: uppercase;
+  font-size: 3rem; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  display: inline-block; }
+
+.btn--header {
+  position: absolute;
+  bottom: 8%;
+  right: 4%;
+  font-size: 1.75rem;
+  color: #eee;
+  border: 3px solid #eee;
+  border-radius: 10rem;
+  padding: 1.5rem;
+  background-color: transparent;
+  animation: moveInRight 2s ease; }
+  .btn--header:hover {
+    color: #eee;
+    background-color: #44bd32;
+    transform: scale(1.25);
+    transition: all .3s;
+    border: none; }
+
+.header {
+  height: 95vh;
+  background-image: url(../images/main-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4%;
+    left: 1%;
+    animation: moveInRight 2s ease; }
+  .header__logo {
+    height: 18rem; }
+  .header__headings-box {
+    position: absolute;
+    top: 65%;
+    left: 47.5%;
+    color: #eee;
+    animation: moveInRight 2s ease; }
+
+.heading {
+  display: block; }
