@@ -1,0 +1,83 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 57rem;
+
+    &__side {
+        color: $color-white;
+        font-size: 2rem;
+        height: 57rem;
+        transition: all .8s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            background-image: linear-gradient(to right bottom, $color-primary-green, $color-primary-orange);
+            transform: rotateY(180deg);
+        }
+
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 33rem;
+        background-blend-mode: overlay;
+    
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-primary-green, $color-primary-orange), url(../../assets/images/IMG_6618.JPG);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-green, $color-primary-orange), url(../../assets/images/IMG_6414.JPG);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-primary-green, $color-primary-orange), url(../../assets/images/IMG_7166.JPG);
+        }
+    
+    }
+
+    &__heading {
+        padding: 2rem;
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__pricebox {
+        text-align: center;
+
+    }
+
+    &__price {
+        text-transform: lowercase;
+    }
+
+    &__amount {
+        font-size: 10rem;
+        font-weight: 600;
+    }
+
+}
+

@@ -1,9 +1,18 @@
+@import "abstract/mixins";
 @import "abstract/variables";
 
-@import "base/base";
 @import "base/animations";
+@import "base/base";
 @import "base/typography";
+@import "base/utilities";
 
 @import "components/buttons";
+@import "components/card";
+@import "components/photoMagic";
+@import "components/feature-box";
 
+@import "layouts/grid";
 @import "layouts/header";
+
+
+@import "pages/home";
