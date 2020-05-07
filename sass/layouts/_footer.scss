@@ -1,0 +1,33 @@
+.footer {
+    background-image: linear-gradient(to right, $color-primary-green, $color-primary-orange);
+    padding-bottom: 5rem;
+
+    &__header {
+        border-bottom: .2rem solid $color-white;
+        padding-bottom: 1rem;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__logo {
+        width: 20%;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+        text-decoration: none;
+        color: $color-white;
+        display: inline-block;
+        transition: all .2s;
+    }
+
+        &:hover,
+        &:active {
+        transform: rotate(-3deg) scale(1.5);
+    }
+    }
+}

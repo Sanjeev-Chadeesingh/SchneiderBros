@@ -10,11 +10,26 @@
     <title>SchneiderBros</title>
 </head>
 <body>
-    <header class="header">
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#top" class="navigation__link">Top</a></li>
+                <li class="navigation__item"><a href="#aboutUs" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#features" class="navigation__link">Features</a></li>
+                <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header" id="top">
         <div class="header__logo-box">
             <img src="assets/images/IMG_6009.PNG" class="header__logo">
         </div>
-        <a href="#" class="btn btn--header">discover</a>
         <div class="header__headings-box">
             <h1 class="heading">
                 <span class="heading--main">Organic Family. Farming.</span>
@@ -24,17 +39,17 @@
     </header>
 
     <main>
-        <section class="aboutUs u-margin-bottom-medium">
+        <section class="aboutUs u-margin-bottom-medium" id="aboutUs">
             <div class="row">
                 <div class="col-1-of-2">
                     <h2 class="heading-secondary-big u-margin-bottom-small">
                         A family affair
                     </h2>
                     <p class="paragraph-copy u-margin-bottom-small">
-                        The Schneider brothers have farming in their DNA. Three previous generations farmed in Nebraska, cultivating produce and cattle. 
+                        Three previous generations of Schneider's farmed in Nebraska, cultivating produce and cattle. 
                     </p>
                     <p class="paragraph-copy">
-                        In 2019, they acquired Hidden Grove Farm in Florida. They decided a minimial footprint through responsible, organic horticulture would be their contribution to the Schneider farming legacy. 
+                        In 2019, the Florida Schneider brothers acquired Hidden Grove Farm. They decided a minimial footprint through responsible, organic horticulture would be their contribution to the Schneider farming legacy. 
                     </p>
                 </div>
                 <div class="col-1-of-2">
@@ -47,7 +62,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="features">
             <div class="row">
                 <div class="col-1-of-3">
                     <div class="feature-box">
@@ -94,9 +109,9 @@
             </div>
         </section>
 
-        <section class="activities">
+        <section class="services" id="services">
             <h2 class="heading-secondary-big u-margin-bottom-medium u-center-text">
-                Activities
+                Services
             </h2>
             <div class="row">
                 <div class="col-1-of-3">
@@ -180,6 +195,27 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__logo-box">
+          <img src="assets/images/HiddenGroveLogo12-2019.png" alt="fullsize logo image" class="footer__logo">
+      </div>
+      <div class="row">
+          <h2 class="heading-secondary-big-white footer__header u-margin-bottom-small">
+              contact
+          </h2>
+          <div class="col-1-of-2">
+            <h2 class="heading-secondary-white">
+                <a href="#" class="footer__link">Schneider Brothers</a>
+            </h2>
+          </div>
+          <div class="col-1-of-2">
+            <h2 class="heading-secondary-white">
+                <a href="#" class="footer__link">Sanjeev Chadeesingh</a>
+            </h2>  
+        </div>
+      </div>
+    </footer>
 
 </body>
 </html>
