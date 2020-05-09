@@ -2,12 +2,12 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
+    height: 75rem;
 
     &__side {
         color: $color-white;
         font-size: 2rem;
-        height: 57rem;
+        height: 75rem;
         transition: all .8s;
         position: absolute;
         top: 0;
@@ -80,16 +80,15 @@
     }
 
     @include respond(tab-port) {
-    height: 55rem;
 
     &__side {
         color: $color-white;
         font-size: 2rem;
-        height: 55rem;
         position: relative;
 
         &--back {
             transform: rotateY(0);
+            display: none;
         }
 
     }

@@ -182,11 +182,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 75rem; }
   .card__side {
     color: #eee;
     font-size: 2rem;
-    height: 57rem;
+    height: 75rem;
     transition: all .8s;
     position: absolute;
     top: 0;
@@ -228,29 +228,27 @@ body {
     font-size: 10rem;
     font-weight: 600; }
   @media only screen and (max-width: 56.25em) {
-    .card {
-      height: 55rem; }
-      .card__side {
-        color: #eee;
-        font-size: 2rem;
-        height: 55rem;
-        position: relative; }
-        .card__side--back {
-          transform: rotateY(0); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__picture {
-        height: 53rem; }
-      .card__heading {
-        padding: 1rem; }
-      .card__cta {
+    .card__side {
+      color: #eee;
+      font-size: 2rem;
+      position: relative; }
+      .card__side--back {
+        transform: rotateY(0);
         display: none; }
-      .card__pricebox {
-        margin: 0;
-        padding: 0; }
-      .card__amount {
-        font-size: 7rem;
-        font-weight: 600; } }
+    .card:hover .card__side--front {
+      transform: rotateY(0); }
+    .card__picture {
+      height: 53rem; }
+    .card__heading {
+      padding: 1rem; }
+    .card__cta {
+      display: none; }
+    .card__pricebox {
+      margin: 0;
+      padding: 0; }
+    .card__amount {
+      font-size: 7rem;
+      font-weight: 600; } }
 
 .photoMagic {
   position: relative; }
