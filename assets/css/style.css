@@ -227,6 +227,28 @@ body {
   .card__amount {
     font-size: 10rem;
     font-weight: 600; }
+  @media only screen and (max-width: 75em) {
+    .card__side {
+      color: #eee;
+      font-size: 2rem;
+      position: relative; }
+      .card__side--back {
+        transform: rotateY(0);
+        display: none; }
+    .card:hover .card__side--front {
+      transform: rotateY(0); }
+    .card__picture {
+      height: 60rem; }
+    .card__heading {
+      padding: 1rem; }
+    .card__cta {
+      display: none; }
+    .card__pricebox {
+      margin: 0;
+      padding: 0; }
+    .card__amount {
+      font-size: 7rem;
+      font-weight: 600; } }
   @media only screen and (max-width: 56.25em) {
     .card__side {
       color: #eee;
@@ -238,7 +260,7 @@ body {
     .card:hover .card__side--front {
       transform: rotateY(0); }
     .card__picture {
-      height: 53rem; }
+      height: 58rem; }
     .card__heading {
       padding: 1rem; }
     .card__cta {
@@ -260,7 +282,7 @@ body {
     .card:hover .card__side--front {
       transform: rotateY(0); }
     .card__picture {
-      height: 60rem; }
+      height: 53rem; }
     .card__heading {
       padding: 1rem; }
     .card__cta {
