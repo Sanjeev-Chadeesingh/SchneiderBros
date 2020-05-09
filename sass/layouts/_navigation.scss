@@ -54,7 +54,7 @@
             left: 30%;
         }
         @include respond(phone) {
-            left: 22%;
+            left: 3%;
         }
     }
 
@@ -84,6 +84,9 @@
 }
     &__checkbox:checked ~ &__background {
         transform: scale(12);
+        @include respond(phone) {
+            transform: scale(9);
+        }
     }
 
     &__checkbox:checked ~ &__nav {

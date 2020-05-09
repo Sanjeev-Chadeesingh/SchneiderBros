@@ -267,7 +267,7 @@ body {
       top: -6rem; }
       @media only screen and (max-width: 56.25em) {
         .photoMagic__photo--2 {
-          left: 4rem;
+          left: 6rem;
           top: 0rem; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--2 {
@@ -278,7 +278,7 @@ body {
       top: 0; }
       @media only screen and (max-width: 56.25em) {
         .photoMagic__photo--3 {
-          left: 8rem;
+          left: 12rem;
           top: 0; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--3 {
@@ -458,7 +458,7 @@ body {
       left: 30%; } }
   @media only screen and (max-width: 25em) {
     .navigation__list {
-      left: 22%; } }
+      left: 3%; } }
 
 .navigation__item {
   margin: 2rem; }
@@ -481,6 +481,9 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(12); }
+  @media only screen and (max-width: 25em) {
+    .navigation__checkbox:checked ~ .navigation__background {
+      transform: scale(9); } }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
