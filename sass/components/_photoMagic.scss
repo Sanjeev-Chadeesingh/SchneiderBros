@@ -39,8 +39,8 @@
             }
 
             @include respond(phone) {
-                left: 9rem;
-                top: 0rem;
+                left: 6rem;
+                top: 6rem;
             }
         }
 
@@ -52,8 +52,8 @@
                 top: 0;
             }
             @include respond(phone) {
-                left: 18rem;
-                top: 0;
+                left: 12rem;
+                top: 12rem;
             }
         }
 
@@ -61,6 +61,11 @@
             outline: 2rem solid $color-primary-green;
             transform: scale(1.06);
             z-index: 20;
+            @include respond(phone) {
+                outline: none;
+                // transform: scale(1.16);
+                z-index: 20;
+            }
         }
 
    }

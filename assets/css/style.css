@@ -271,8 +271,8 @@ body {
           top: 0rem; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--2 {
-          left: 9rem;
-          top: 0rem; } }
+          left: 6rem;
+          top: 6rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
@@ -282,12 +282,16 @@ body {
           top: 0; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--3 {
-          left: 18rem;
-          top: 0; } }
+          left: 12rem;
+          top: 12rem; } }
     .photoMagic__photo:hover {
       outline: 2rem solid #44bd32;
       transform: scale(1.06);
       z-index: 20; }
+      @media only screen and (max-width: 25em) {
+        .photoMagic__photo:hover {
+          outline: none;
+          z-index: 20; } }
 
 .feature-box {
   background-color: rgba(238, 238, 238, 0.8);
