@@ -82,10 +82,9 @@ body {
   text-transform: lowercase;
   letter-spacing: .3rem;
   font-size: 6rem; }
-
-.heading--sub {
-  text-transform: uppercase;
-  font-size: 3rem; }
+  @media only screen and (max-width: 25em) {
+    .heading--main {
+      font-size: 5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -249,13 +248,17 @@ body {
     @media only screen and (max-width: 75em) {
       .photoMagic__photo {
         width: 45%; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 25em) {
       .photoMagic__photo {
-        width: 40%; } }
+        width: 50%; } }
     .photoMagic__photo--1 {
       left: 22rem;
       top: -12rem; }
       @media only screen and (max-width: 56.25em) {
+        .photoMagic__photo--1 {
+          left: 0;
+          top: 0; } }
+      @media only screen and (max-width: 25em) {
         .photoMagic__photo--1 {
           left: 0;
           top: 0; } }
@@ -266,12 +269,20 @@ body {
         .photoMagic__photo--2 {
           left: 18rem;
           top: -5rem; } }
+      @media only screen and (max-width: 25em) {
+        .photoMagic__photo--2 {
+          left: 9rem;
+          top: -2.5rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
       @media only screen and (max-width: 56.25em) {
         .photoMagic__photo--3 {
           left: 36rem;
+          top: 0; } }
+      @media only screen and (max-width: 25em) {
+        .photoMagic__photo--3 {
+          left: 18rem;
           top: 0; } }
     .photoMagic__photo:hover {
       outline: 2rem solid #44bd32;
@@ -297,12 +308,18 @@ body {
 .footer {
   background-image: linear-gradient(to right, #44bd32, #e67e22);
   padding-bottom: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding-bottom: 1rem; } }
   .footer__header {
     border-bottom: 0.2rem solid #eee;
     padding-bottom: 1rem; }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 2rem; } }
   .footer__logo {
     width: 20%; }
   .footer__link:link, .footer__link:visited {
@@ -358,6 +375,9 @@ body {
   background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
+  @media only screen and (max-width: 25em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4%;
@@ -427,7 +447,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation__list {
       left: 30%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 25em) {
     .navigation__list {
       left: 22%; } }
 
