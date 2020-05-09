@@ -80,12 +80,12 @@
     }
 
     @include respond(tab-port) {
-    height: auto;
+    height: 55rem;
 
     &__side {
         color: $color-white;
         font-size: 2rem;
-        height: auto;
+        height: 55rem;
         position: relative;
 
         &--back {

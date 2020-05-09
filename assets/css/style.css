@@ -229,11 +229,11 @@ body {
     font-weight: 600; }
   @media only screen and (max-width: 56.25em) {
     .card {
-      height: auto; }
+      height: 55rem; }
       .card__side {
         color: #eee;
         font-size: 2rem;
-        height: auto;
+        height: 55rem;
         position: relative; }
         .card__side--back {
           transform: rotateY(0); }
