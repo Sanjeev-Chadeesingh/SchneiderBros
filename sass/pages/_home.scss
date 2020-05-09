@@ -4,6 +4,7 @@
     margin-top: -20vh;
     margin-bottom: 13rem;
     @include respond(phone) {
+        margin-top: .15rem;
         padding-bottom: 5rem;
         padding-top: 15rem;
      }

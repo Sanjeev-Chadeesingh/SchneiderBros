@@ -32,7 +32,7 @@
             left: 11rem;
             top: -6rem;
             @include respond(tab-port) {
-                left: 14rem;
+                left: 7rem;
                 top: 0rem;
             }
         }
@@ -41,7 +41,7 @@
             left: 0;
             top: 0;
             @include respond(tab-port) {
-                left: 28rem;
+                left: 14rem;
                 top: 0;
             }
         }
