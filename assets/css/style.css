@@ -306,6 +306,10 @@ body {
       .photoMagic__photo {
         position: static;
         width: 100%; } }
+    @media only screen and (max-width: 56.25em) {
+      .photoMagic__photo {
+        position: static;
+        width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .photoMagic__photo {
         position: static;
@@ -313,24 +317,12 @@ body {
     .photoMagic__photo--1 {
       left: 22rem;
       top: -12rem; }
-      @media only screen and (max-width: 56.25em) {
-        .photoMagic__photo--1 {
-          left: 0;
-          top: 0; } }
     .photoMagic__photo--2 {
       left: 11rem;
       top: -6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .photoMagic__photo--2 {
-          left: 7rem;
-          top: 0rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
-      @media only screen and (max-width: 56.25em) {
-        .photoMagic__photo--3 {
-          left: 14rem;
-          top: 0; } }
     .photoMagic__photo:hover {
       outline: 2rem solid #44bd32;
       transform: scale(1.06);
