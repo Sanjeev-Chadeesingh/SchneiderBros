@@ -36,7 +36,7 @@ ORDER:
 
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content }; //8px
+        @media only screen and (max-width: 26.56em) { @content }; //8px
     }
 
     @if $breakpoint == tab-port {

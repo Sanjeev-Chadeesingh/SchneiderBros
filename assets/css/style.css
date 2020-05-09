@@ -82,7 +82,7 @@ body {
   text-transform: lowercase;
   letter-spacing: .3rem;
   font-size: 6rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .heading--main {
       font-size: 4rem; } }
 
@@ -271,7 +271,7 @@ body {
     .card__amount {
       font-size: 7rem;
       font-weight: 600; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .card__heading {
       padding: 0; }
     .card__side {
@@ -312,7 +312,7 @@ body {
       .photoMagic__photo {
         position: static;
         width: 100%; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 26.56em) {
       .photoMagic__photo {
         position: static;
         width: 100%; } }
@@ -329,7 +329,7 @@ body {
       outline: 2rem solid #44bd32;
       transform: scale(1.06);
       z-index: 20; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 26.56em) {
         .photoMagic__photo:hover {
           outline: none;
           z-index: 20; } }
@@ -356,13 +356,13 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding-bottom: 1rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .footer {
       padding-bottom: 0; } }
   .footer__header {
     border-bottom: 0.2rem solid #eee;
     padding-bottom: 1rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 26.56em) {
       .footer__header {
         padding-bottom: 0; } }
   .footer__logo-box {
@@ -371,7 +371,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 2rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 26.56em) {
       .footer__logo-box {
         margin-bottom: 0; } }
   .footer__logo {
@@ -392,7 +392,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 26.56em) {
       .row:not(:last-child) {
         margin-top: 5rem;
         margin-bottom: 6rem; } }
@@ -433,7 +433,7 @@ body {
   background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   .header__logo-box {
@@ -472,7 +472,7 @@ body {
   z-index: 2000;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
   transition: all .3s; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .navigation__button {
       top: 1rem;
       right: 1rem; } }
@@ -489,7 +489,7 @@ body {
   background-image: radial-gradient(#e67e22, #e67e22);
   z-index: 1000;
   transition: all .3s; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .navigation__background {
       top: 1.5rem;
       right: 1.5rem; } }
@@ -513,7 +513,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation__list {
       left: 21%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .navigation__list {
       left: 24%; } }
 
@@ -538,7 +538,7 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(12); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .navigation__checkbox:checked ~ .navigation__background {
       transform: scale(9); } }
 
@@ -570,7 +570,7 @@ body {
   padding: 35rem 0;
   margin-top: -20vh;
   margin-bottom: 13rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 26.56em) {
     .aboutUs {
       margin-top: .15rem;
       padding-bottom: 5rem;
