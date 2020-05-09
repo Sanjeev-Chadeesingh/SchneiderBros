@@ -311,15 +311,24 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding-bottom: 1rem; } }
+  @media only screen and (max-width: 25em) {
+    .footer {
+      padding-bottom: 0; } }
   .footer__header {
     border-bottom: 0.2rem solid #eee;
     padding-bottom: 1rem; }
+    @media only screen and (max-width: 25em) {
+      .footer__header {
+        padding-bottom: 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .footer__logo-box {
+        margin-bottom: 0; } }
   .footer__logo {
     width: 20%; }
   .footer__link:link, .footer__link:visited {
