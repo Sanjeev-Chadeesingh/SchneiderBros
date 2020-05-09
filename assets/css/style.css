@@ -267,22 +267,22 @@ body {
       top: -6rem; }
       @media only screen and (max-width: 56.25em) {
         .photoMagic__photo--2 {
-          left: 6rem;
+          left: 14rem;
           top: 0rem; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--2 {
-          left: 3rem;
+          left: 9rem;
           top: 0rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
       @media only screen and (max-width: 56.25em) {
         .photoMagic__photo--3 {
-          left: 12rem;
+          left: 28rem;
           top: 0; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--3 {
-          left: 6rem;
+          left: 18rem;
           top: 0; } }
     .photoMagic__photo:hover {
       outline: 2rem solid #44bd32;

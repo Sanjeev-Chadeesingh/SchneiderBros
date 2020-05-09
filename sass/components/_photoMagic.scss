@@ -34,12 +34,12 @@
             left: 11rem;
             top: -6rem;
             @include respond(tab-port) {
-                left: 6rem;
+                left: 14rem;
                 top: 0rem;
             }
 
             @include respond(phone) {
-                left: 3rem;
+                left: 9rem;
                 top: 0rem;
             }
         }
@@ -48,11 +48,11 @@
             left: 0;
             top: 0;
             @include respond(tab-port) {
-                left: 12rem;
+                left: 28rem;
                 top: 0;
             }
             @include respond(phone) {
-                left: 6rem;
+                left: 18rem;
                 top: 0;
             }
         }
