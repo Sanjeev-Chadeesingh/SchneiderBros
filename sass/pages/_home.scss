@@ -3,6 +3,10 @@
     padding: 35rem 0;
     margin-top: -20vh;
     margin-bottom: 13rem;
+    @include respond(phone) {
+        padding-bottom: 5rem;
+        padding-top: 15rem;
+     }
 }
 
 .features {

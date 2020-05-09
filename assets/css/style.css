@@ -84,7 +84,7 @@ body {
   font-size: 6rem; }
   @media only screen and (max-width: 37.5em) {
     .heading--main {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -250,15 +250,14 @@ body {
         width: 45%; } }
     @media only screen and (max-width: 37.5em) {
       .photoMagic__photo {
-        width: 45%; } }
+        position: static; } }
+  @media only screen and (max-width: 37.5em) and (max-width: 37.5em) {
+    .photoMagic__photo {
+      width: 100%; } }
     .photoMagic__photo--1 {
       left: 22rem;
       top: -12rem; }
       @media only screen and (max-width: 56.25em) {
-        .photoMagic__photo--1 {
-          left: 0;
-          top: 0; } }
-      @media only screen and (max-width: 37.5em) {
         .photoMagic__photo--1 {
           left: 0;
           top: 0; } }
@@ -269,10 +268,6 @@ body {
         .photoMagic__photo--2 {
           left: 14rem;
           top: 0rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .photoMagic__photo--2 {
-          left: 6rem;
-          top: 6rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
@@ -280,10 +275,6 @@ body {
         .photoMagic__photo--3 {
           left: 28rem;
           top: 0; } }
-      @media only screen and (max-width: 37.5em) {
-        .photoMagic__photo--3 {
-          left: 12rem;
-          top: 12rem; } }
     .photoMagic__photo:hover {
       outline: 2rem solid #44bd32;
       transform: scale(1.06);
@@ -517,6 +508,10 @@ body {
   padding: 35rem 0;
   margin-top: -20vh;
   margin-bottom: 13rem; }
+  @media only screen and (max-width: 37.5em) {
+    .aboutUs {
+      padding-bottom: 5rem;
+      padding-top: 15rem; } }
 
 .features {
   padding: 20rem, 0;
