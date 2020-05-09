@@ -272,6 +272,8 @@ body {
       font-size: 7rem;
       font-weight: 600; } }
   @media only screen and (max-width: 37.5em) {
+    .card__heading {
+      padding: 0; }
     .card__side {
       color: #eee;
       font-size: 2rem;
@@ -282,9 +284,9 @@ body {
     .card:hover .card__side--front {
       transform: rotateY(0); }
     .card__picture {
-      height: 45rem; }
+      width: auto; }
     .card__heading {
-      padding: 1rem; }
+      padding: 0; }
     .card__cta {
       display: none; }
     .card__pricebox {

@@ -165,6 +165,10 @@
 
     @include respond(phone) {
 
+        &__heading {
+            padding: 0;
+        }
+
         &__side {
             color: $color-white;
             font-size: 2rem;
@@ -182,11 +186,11 @@
         }
     
         &__picture {
-            height: 45rem;
+            width: auto;
         }
     
         &__heading {
-            padding: 1rem;
+            padding: 0;
         }
     
         &__cta {
