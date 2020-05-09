@@ -1,4 +1,28 @@
+/*
+(desktop first)
+0-600px:    phone
 
+600-900:    tablet portrait
+
+900-1200:    tablet landscape
+
+1200-1800:   normal styles apply   
+
+1800+:      Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER:
+1-base+typography
+2-general layout+grid
+3-more specific page layouts+components
+
+1em = 16px
+*/
 @keyframes moveInRight {
   0% {
     transform: translateX(-10rem);
@@ -37,7 +61,11 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 1.5rem; }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 0; } }
 
 /*
 FONTS:
@@ -48,8 +76,7 @@ font-family: 'Signika Negative', sans-serif;
 font-family: 'Baloo Chettan 2', cursive;
 */
 body {
-  font-family: 'Signika Negative', sans-serif;
-  padding: 1.5rem; }
+  font-family: 'Signika Negative', sans-serif; }
 
 .heading--main {
   text-transform: lowercase;
@@ -210,6 +237,9 @@ body {
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .photoMagic__photo {
+        width: 45%; } }
     .photoMagic__photo--1 {
       left: 22rem;
       top: -12rem; }
@@ -264,6 +294,12 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 70rem; } }
   .row::after {
     content: "";
     display: table;
@@ -273,6 +309,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 6rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
