@@ -250,7 +250,7 @@ body {
         width: 45%; } }
     @media only screen and (max-width: 25em) {
       .photoMagic__photo {
-        width: 50%; } }
+        width: 45%; } }
     .photoMagic__photo--1 {
       left: 22rem;
       top: -12rem; }
@@ -268,11 +268,11 @@ body {
       @media only screen and (max-width: 56.25em) {
         .photoMagic__photo--2 {
           left: 18rem;
-          top: -5rem; } }
+          top: 0rem; } }
       @media only screen and (max-width: 25em) {
         .photoMagic__photo--2 {
           left: 9rem;
-          top: -2.5rem; } }
+          top: 0rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
