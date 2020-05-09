@@ -15,13 +15,13 @@
        }
 
        @include respond(tab-port) {
-        position: static;
-        width: 100%;
+            position: static;
+            width: 100%;
        }
 
        @include respond(phone) {
-        position: static;
-        width: 100%;
+            position: static;
+            width: 100%;
        }
 
         &--1 {

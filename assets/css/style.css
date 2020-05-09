@@ -282,7 +282,7 @@ body {
     .card:hover .card__side--front {
       transform: rotateY(0); }
     .card__picture {
-      height: 53rem; }
+      height: 45rem; }
     .card__heading {
       padding: 1rem; }
     .card__cta {
