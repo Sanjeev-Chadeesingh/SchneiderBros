@@ -121,5 +121,47 @@
 
     }
 
+    @include respond(phone) {
+
+        &__side {
+            color: $color-white;
+            font-size: 2rem;
+            position: relative;
+    
+            &--back {
+                transform: rotateY(0);
+                display: none;
+            }
+    
+        }
+    
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+    
+        &__picture {
+            height: 53rem;
+        }
+    
+        &__heading {
+            padding: 1rem;
+        }
+    
+        &__cta {
+            display: none;
+        }
+    
+        &__pricebox {
+            margin: 0;
+            padding: 0;
+        }
+    
+        &__amount {
+            font-size: 7rem;
+            font-weight: 600;
+        }
+    
+        }
+
 }
 
