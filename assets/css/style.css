@@ -1,3 +1,4 @@
+
 @keyframes moveInRight {
   0% {
     transform: translateX(-10rem);
@@ -25,6 +26,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -367,7 +377,7 @@ body {
   transform: translateY(-1rem) scale(1.25); }
 
 .navigation__link:active {
-  transform: translateY(0); }
+  transform: translateY(0.25rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(12); }
