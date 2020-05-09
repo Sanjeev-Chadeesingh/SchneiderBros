@@ -184,6 +184,9 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 57rem; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      margin-bottom: 35rem; } }
   .card__side {
     color: #eee;
     font-size: 2rem;
@@ -195,6 +198,9 @@ body {
     width: 100%;
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 56.25em) {
+      .card__side {
+        height: 90rem; } }
     .card__side--front {
       background-color: #eee; }
     .card__side--back {
@@ -208,6 +214,9 @@ body {
     background-size: cover;
     height: 33rem;
     background-blend-mode: overlay; }
+    @media only screen and (max-width: 56.25em) {
+      .card__picture {
+        height: 70rem; } }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #44bd32, #e67e22), url(../../assets/images/IMG_6618.JPG); }
     .card__picture--2 {
@@ -240,15 +249,30 @@ body {
     @media only screen and (max-width: 75em) {
       .photoMagic__photo {
         width: 45%; } }
+    @media only screen and (max-width: 37.5em) {
+      .photoMagic__photo {
+        width: 40%; } }
     .photoMagic__photo--1 {
       left: 22rem;
       top: -12rem; }
+      @media only screen and (max-width: 56.25em) {
+        .photoMagic__photo--1 {
+          left: 0;
+          top: 0; } }
     .photoMagic__photo--2 {
       left: 11rem;
       top: -6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .photoMagic__photo--2 {
+          left: 18rem;
+          top: -5rem; } }
     .photoMagic__photo--3 {
       left: 0;
       top: 0; }
+      @media only screen and (max-width: 56.25em) {
+        .photoMagic__photo--3 {
+          left: 36rem;
+          top: 0; } }
     .photoMagic__photo:hover {
       outline: 2rem solid #44bd32;
       transform: scale(1.06);
@@ -400,6 +424,12 @@ body {
   list-style: none;
   text-align: center;
   width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__list {
+      left: 30%; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__list {
+      left: 22%; } }
 
 .navigation__item {
   margin: 2rem; }

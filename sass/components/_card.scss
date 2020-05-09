@@ -3,6 +3,9 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 57rem;
+    @include respond(tab-port) {
+        margin-bottom: 35rem;
+    }
 
     &__side {
         color: $color-white;
@@ -15,6 +18,9 @@
         width: 100%;
         backface-visibility: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        @include respond(tab-port) {
+            height: 90rem;
+        }
 
         &--front {
             background-color: $color-white;
@@ -39,6 +45,9 @@
         background-size: cover;
         height: 33rem;
         background-blend-mode: overlay;
+        @include respond(tab-port) {
+            height: 70rem;
+        }
     
         &--1 {
             background-image: linear-gradient(to right bottom, $color-primary-green, $color-primary-orange), url(../../assets/images/IMG_6618.JPG);
