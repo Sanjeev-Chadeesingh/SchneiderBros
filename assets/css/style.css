@@ -284,7 +284,8 @@ body {
     .card:hover .card__side--front {
       transform: rotateY(0); }
     .card__picture {
-      width: auto; }
+      width: auto;
+      height: auto; }
     .card__heading {
       padding: 0; }
     .card__cta {
