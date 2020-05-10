@@ -84,7 +84,8 @@ body {
   font-size: 6rem; }
   @media only screen and (max-width: 26.56em) {
     .heading--main {
-      font-size: 4rem; } }
+      font-size: 5.2rem;
+      letter-spacing: .15rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -454,6 +455,9 @@ body {
     animation: moveInRight 2s ease .5s;
     animation-fill-mode: backwards;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 26.56em) {
+      .header__headings-box {
+        left: 40%; } }
 
 .heading {
   display: block; }

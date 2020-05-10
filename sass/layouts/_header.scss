@@ -26,6 +26,9 @@
         position: absolute;
         top: 65%;
         left: 47.5%;
+        @include respond(phone) {
+            left: 40%;
+        }
         color: $color-white;
         animation: moveInRight 2s ease .5s;
         animation-fill-mode: backwards;
